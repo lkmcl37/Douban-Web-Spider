@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spiderConfig name="Spider" listener="listener.SpiderListenerAdaptor">
+
+	<dirs name="movie.douban.com" fetcher="" forbidden="" next="1" hasDetail="true" encode="utf-8"
+		listener=""
+		parser="parser.DoubanParser">
+		<dir name="Douban Movie" maxPage="2">
+			<url><![CDATA[http://movie.douban.com/subject/10533913/reviews]]></url>
+			<next start="2" step="20"><![CDATA[http://movie.douban.com/subject/10533913/reviews?start=(*)&filter=&limit=20]]></next>
+			<xpath><![CDATA[h3 a[onclick^=moreurl]]]></xpath>
+		</dir> 
+	</dirs>
+</spiderConfig>
