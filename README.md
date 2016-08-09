@@ -1,5 +1,6 @@
 # Web-Spider
-A web spider based on breadth-first crawling strategy written in JAVA and used for collecting movie reviews from movie.douban.com.
+- A Java web spider with the crawling strategy of traversing the web site in breadth-first search order.
+- Used for collecting movie reviews from movie.douban.com.
 
 # How to use
 1. Download the code
